@@ -1,5 +1,4 @@
 pragma solidity ^0.4.18;
-
 // ----------------------------------------------------------------------------
 // 'MYT' 'Blank' token contract
 //
@@ -115,7 +114,7 @@ contract Blank is ERC20Interface, Owned, SafeMath {
         symbol = "BNK";
         name = "Blank";
         decimals = 18;
-        _totalSupply = 0;
+        _totalSupply = 100000;
         startDate = now;
         bonusEnds = now + 1 weeks;
         endDate = now + 4 weeks;
