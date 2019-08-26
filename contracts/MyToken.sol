@@ -1,21 +1,18 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// 'MYT' 'MyToken' token contract
+// 'MYT' 'Blank' token contract
 //
-// Symbol      : MYT
-// Name        : MyToken
+// Symbol      : BNK
+// Name        : Blank
 // Total supply: Generated from contributions
 // Decimals    : 18
 //
 // Enjoy.
 //
-// (c) BokkyPooBah / Bok Consulting Pty Ltd 2017. The MIT Licence.
 // ----------------------------------------------------------------------------
 
 
-// ----------------------------------------------------------------------------
-// Safe maths
 // ----------------------------------------------------------------------------
 contract SafeMath {
     function safeAdd(uint a, uint b) public pure returns (uint c) {
@@ -98,7 +95,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals
 // Receives ETH and generates tokens
 // ----------------------------------------------------------------------------
-contract MyToken is ERC20Interface, Owned, SafeMath {
+contract Blank is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -114,9 +111,9 @@ contract MyToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function MyToken() public {
-        symbol = "MYT";
-        name = "MyToken";
+    function Blank() public {
+        symbol = "BNK";
+        name = "Blank";
         decimals = 18;
         _totalSupply = 0;
         startDate = now;
